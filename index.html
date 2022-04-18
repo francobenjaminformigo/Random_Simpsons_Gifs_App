@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons Gif App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <section class="row gutter">
+        <div class="wrapper">
+
+            <div class="heading">
+                <h1>SIMPSONS TV</h1>
+            </div>
+    
+            <div class="gif-tv">
+                <div id="gif_tv_viewport" class="viewport">
+                    <img id="gif_tv_video" class="video" src="https://res.cloudinary.com/cyborgspaceviking/image/upload/v1571155222/giphy_n0r827.gif">
+                    <div id="gif_tv_pixels" class="pixels" style="background-image: url('https://res.cloudinary.com/cyborgspaceviking/image/upload/v1571119227/vhs-overlay_zpzs7x.png')"></div>
+                    <div class="meta-left">
+                        <span id="gif_tv_message_channel"></span>
+                        <span id="gif_tv_message_hd" class="small-message"></span>
+                        <span id="gif_tv_message_hue_shift" class="small-message"></span>
+                        <span id="gif_tv_message_bright" class="small-message"></span>
+                        <span id="gif_tv_message_color" class="small-message"></span>
+                    </div>
+                    <div class="meta-right">
+                        <span id="gif_tv_message_volume"></span>
+                        <span id="gif_tv_message_mute" class="small-message"></span>
+                    </div>
+                </div>
+                <img class="tv" src="https://i.ibb.co/z4bb4sc/2.png">
+    
+                <button id="gif_tv_button_channel" class="dial" title="Change the Channels"></button>
+                <button id="gif_tv_button_volume" class="dial" title="Mute / Unmute"></button>
+    
+                <button id="gif_tv_button_mute" class="switch" title="Mute / Unmute"></button>
+                <button id="gif_tv_button_hd" class="switch" title="High Def"></button>
+                <button id="gif_tv_button_hue_shift" class="switch" title="Hue Shift"></button>
+                <button id="gif_tv_button_bright" class="switch" title="Bright / Dark"></button>
+                <button id="gif_tv_button_color" class="switch" title="Color / B&W"></button>
+
+            </div>
+    
+            
+    
+        </div>
+        <div class="instructions">
+            <h2 class="instructions-title">Instructions:</h2>
+            <div class="boxes">
+                <div class="box-1">
+                    <h2>Keyboard</h2>
+                    <hr>
+                    <p><b>Channel Up(New Gif):</b> "Right Arrow"</p>
+                    <p><b>Channel Down(New Gif):</b> "Left Arrow"</p>
+                    <p><b>Volume Up:</b> "Up Arrow"</p>
+                    <p><b>Volume Down:</b> "Down Arrow"</p>
+                    <p><b>Toggle Mute:</b> "M"</p>
+                    <p><b>Toggle HD:</b> "H"</p>
+                    <p><b>Toggle Hue Shift:</b> "S"</p>
+                    <p><b>Toggle Dark Mode:</b> "D"</p>
+                    <p><b>Toggle Black&White:</b> "B"</p>
+                </div>
+                <div class="box-2">
+                    <h2>Touch</h2>
+                    <hr>
+                    <p><b>Channel Up(New Gif):</b> Top Dial(Touch-Mobile/Left Click-PC)</p>
+                    <p><b>Channel Down(New Gif):</b> Top Dial(Hold-Mobile/Right Click-PC)</p>
+                    <p><b>Volume Up:</b> Bottom Dial(Touch-Mobile/Left Click-PC)</p>
+                    <p><b>Volume Down:</b> Bottom Dial(Hold-Mobile/Right Click-PC)</p>
+                    <p><b>Buttons(From Top to Bottom):</b></p>
+                    <p><b>1 -</b> Toggle Mute</p>
+                    <p><b>2 -</b> Toggle HD</p>
+                    <p><b>3 -</b> Toggle Hue Shift</p>
+                    <p><b>4 -</b> Toggle Dark Mode</p>
+                    <p><b>5 -</b> Toggle Black&White</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

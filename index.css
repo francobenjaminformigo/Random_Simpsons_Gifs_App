@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|VT323&display=swap");
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  .gif-tv .viewport span#gif_tv_message_channel {
+	text-shadow: 0 0 3px #888;
+	font-size: 2.2rem;
+	font-family: VT323;
+}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .gif-tv .viewport span#gif_tv_message_channel {
+	text-shadow: 0 0 3px #888;
+	font-size: 2.4rem;
+	font-family: VT323;
+}
+}
+
+
+body {
+  position: relative;
+  background-color: #000;
+  font-size: 1rem;
+  font-family: Roboto;
+  color: #ccc;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+body:before {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://res.cloudinary.com/cyborgspaceviking/image/upload/v1571119521/space-background_fowfq3.jpg");
+  opacity: 0.3;
+  content: "";
+}
+section {
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.gutter {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.wrapper {
+  max-width: 1080px;
+  margin: auto;
+}
+.gif-tv {
+  position: relative;
+}
+.gif-tv .viewport {
+  position: absolute;
+  top: 9%;
+  right: 26%;
+  bottom: 15%;
+  left: 7%;
+  background: #161616;
+  z-index: -1;
+  overflow: hidden;
+}
+.gif-tv .viewport .video {
+  z-index: 0;
+  position: absolute;
+  top: 49.5%;
+  left: 49.7%;
+  transform: translate(-50%, -50%);
+  max-width: 97%;
+  max-height: 96%;
+}
+.gif-tv .viewport .pixels {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+.gif-tv .viewport .meta-left,
+.gif-tv .viewport .meta-right {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 4% 6%;
+}
+.gif-tv .viewport .meta-left {
+  align-items: flex-start;
+  left: 0;
+  right: unset;
+}
+.gif-tv .viewport .meta-right {
+  align-items: flex-end;
+  left: unset;
+  right: 0;
+}
+.gif-tv .viewport span {
+  text-shadow: 0 0 3px #888;
+  font-family: VT323;
+}
+.gif-tv .viewport span:not(.active) {
+  display: none;
+}
+.gif-tv .viewport span.active {
+  display: block;
+}
+.gif-tv button.dial {
+  display: block;
+  position: absolute;
+  left: 85.6%;
+  transform: translateY(-50%);
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  width: 10.2%;
+  line-height: 0;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.gif-tv button.dial:hover,
+.gif-tv button.dial:focus {
+  outline: none;
+}
+.gif-tv button.dial:hover {
+  border-color: #0af;
+}
+.gif-tv button.dial:active {
+  border-color: #007fff;
+}
+.gif-tv button.dial::before {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  content: "";
+}
+.gif-tv button#gif_tv_button_channel {
+  top: 56.3%;
+}
+.gif-tv button#gif_tv_button_volume {
+  top: 74.6%;
+}
+.gif-tv button.switch {
+  display: block;
+  position: absolute;
+  left: 81.6%;
+  transform: translateY(-50%);
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  width: 2.1%;
+  line-height: 0;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.gif-tv button.switch:hover,
+.gif-tv button.switch:focus {
+  outline: none;
+  border: none;
+}
+.gif-tv button.switch:hover {
+  background-color: transparent;
+}
+.gif-tv button.switch:active {
+  background-color: #007fff;
+}
+.gif-tv button.switch::before {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  content: "";
+}
+.gif-tv button#gif_tv_button_mute {
+  top: 53.7%;
+}
+.gif-tv button#gif_tv_button_hd {
+  top: 59.8%;
+}
+.gif-tv button#gif_tv_button_hue_shift {
+  top: 66.2%;
+}
+.gif-tv button#gif_tv_button_bright {
+  top: 72.7%;
+}
+.gif-tv button#gif_tv_button_color {
+  top: 79%;
+}
+@keyframes rainbow_barf {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.gif-tv .cta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: bottom left;
+  transform: translate(100%, 0) rotate(90deg);
+  text-shadow: 0 2px 8px #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.heading {
+  width: 100%;
+  margin: 4% 0;
+  text-shadow: 0 2px 8px #999;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.instructions {
+  text-align: center;
+}
+
+div.boxes {
+  margin: 0 auto;
+  width: 100%;
+  border: solid white 3px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1080px;
+}
+
+div.box-1 {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+div.box-2 {
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .gif-tv .viewport span#gif_tv_message_channel {
+	text-shadow: 0 0 3px #888;
+	font-size: 3.2rem;
+	font-family: VT323;
+  }
+  div.boxes {
+    flex-direction: row;
+  }
+
+  div.box-1 {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: solid white 1px;
+  }
+  div.box-2 {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: solid white 1px;;
+  }
+}
