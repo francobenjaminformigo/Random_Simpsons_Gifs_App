@@ -12,6 +12,3 @@
   <img src="https://i.ibb.co/JpnLNn6/1.png" />
 </p>
 
-<p align="center">
-  <img src="https://i.ibb.co/PFgWcXT/2.png" />
-</p>
